@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Web/static/css/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" method="post" name="form">
+            {%csrf_token%}
+            <div class="h5 font-weight-bold text-center mb-3">Registration</div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="far fa-user"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="FirstName" name="firstname">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="far fa-user"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="SecondName" name="lastname">
+            </div>
+
+
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="far fa-envelope"></span></div>
+                <input autocomplete="off" type="email" class="form-control" placeholder="Email" name="email">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="far fa-user"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="UserName" name="username">
+            </div>
+            <!-- <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-phone"></span></div>
+                <input autocomplete="off" type="tel" class="form-control" placeholder="Phone">
+            </div> -->
+            <!-- <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-map-marker-alt"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="City">
+            </div> -->
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-key"></span></div>
+                <input autocomplete="off" type="password" class="form-control" placeholder="Password" name="password1" >
+                <div class="icon btn"><span class="fas fa-eye-slash"></span></div>
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-key"></span></div>
+                <input autocomplete="off" type="password" class="form-control" placeholder="Conform Password" name="password2">
+                <div class="icon btn"><span class="fas fa-eye-slash"></span></div>
+            </div>
+            <div class="mb-2">
+                <label class="option">Remember me
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <button type="submit" value="Register" class="btn btn-primary mb-3">signup</button>
+            <div class="terms mb-2">
+                By clicking "Signup", you acknowledge that you have read the
+                <a href="#">Privacy Policy</a> and agree to the
+                <a href="#">Terms of Service</a>.
+            </div>
+            <div class="connect border-bottom mt-4 mb-4"></div>
+            <ul class="p-0 social-links">
+                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fab fa-google"></span></a></li>
+                <li><a href="#"><span class="fab fa-github"></span></a></li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
